@@ -3,7 +3,8 @@ import { Container, Typography, Box, Button } from '@mui/material';
 import '@fontsource/roboto';
 import banner from './images/banner3.png'; 
 import logo from './images/logo5.png';
-import StandardImageList from './ImageList';
+import cut from './images/cut1.jpg'
+// import StandardImageList from './ImageList';
 
 
 function Home() {
@@ -19,7 +20,7 @@ function Home() {
         <Box 
           justifyContent='center'
           sx={{
-            height: '75vh',
+            height: '80vh',
             width: '100vw',
             bgcolor: '#192A56',
             backgroundImage: `url(${banner})`,
@@ -113,23 +114,73 @@ function Home() {
 
         <Box
           sx={{
-            height: '75vh',
+            height: '70vh',
             width: '100vw',
             bgcolor: '#192A56',
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'column',
+            justifyContent: 'space-evenly'
           }}
         >
           {/* <StandardImageList></StandardImageList> */}
           <Box
             sx={{
               display: 'flex',
-              flexDirection: 'row'
+              flexDirection: 'row',
+              justifyContent: 'space-evenly'
             }}
           >
-            
+            <img 
+              src={cut} 
+              alt='cut'
+              style={{
+                  height: '35vh'
+              }}
+            ></img>
+            <img 
+              src={cut} 
+              alt='cut'
+              style={{
+                height: '35vh'
+              }}
+            ></img>
+            <img 
+              src={cut} 
+              alt='cut'
+              style={{
+                height: '35vh'
+              }}
+            ></img>
           </Box>
-          <Box></Box>
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'space-evenly'
+            }}
+          >
+            <img 
+              src={cut} 
+              alt='cut'
+              style={{
+                height: '35vh'
+              }}
+            ></img>
+            <img 
+              src={cut} 
+              alt='cut'
+              style={{
+                height: '35vh'
+              }}
+            ></img>
+            <img 
+              src={cut} 
+              alt='cut'
+              style={{
+                height: '35vh'
+              }}
+            ></img>
+          </Box>
         </Box>
       </Container>
     </>
