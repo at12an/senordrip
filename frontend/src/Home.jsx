@@ -143,9 +143,8 @@ function Home() {
 
         <Box
           sx={{
-            // height: '70vh',
             width: '100vw',
-            bgcolor: '#192A56',
+            bgcolor: '#eae9e7',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-evenly',
@@ -156,31 +155,34 @@ function Home() {
             className='home-picture-box'
             sx={{
               display: 'flex',
-              width: '66vw',
+              width: '69vw',
               flexDirection: 'row',
               justifyContent: 'space-evenly',
               alignItems: 'center'
             }}
           >
             <img 
+              className='home-picture-img'
               src={cut1} 
               alt='cut1'
               style={{
-                width: '22vw'
+                width: '23vw'
               }}
             ></img>
             <img 
+              className='home-picture-img'
               src={cut2} 
               alt='cut2'
               style={{
-                width: '22vw'
+                width: '23vw'
               }}
             ></img>
             <img 
+              className='home-picture-img'
               src={cut3} 
               alt='cut3'
               style={{
-                width: '22vw'
+                width: '23vw'
               }}
             ></img>
           </Box>
@@ -192,28 +194,30 @@ function Home() {
               flexDirection: 'row',
               justifyContent: 'space-evenly',
               alignItems: 'center'
-              // pb: .5
             }}
           >
             <img 
+              className='home-picture-img'
               src={cut4} 
               alt='cut4'
               style={{
-                width: '22vw'
+                width: '23vw'
               }}
             ></img> 
             <img 
+              className='home-picture-img'
               src={cut5} 
               alt='cut5'
               style={{
-                width: '22vw'
+                width: '23vw'
               }}
             ></img>
             <img
+              className='home-picture-img'
               src={cut6} 
               alt='cut6'
               style={{
-                width: '22vw'
+                width: '23vw'
               }}
             ></img>
           </Box>
