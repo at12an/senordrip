@@ -10,13 +10,7 @@ import cut3 from './images/cuts/cut3.jpg';
 import cut4 from './images/cuts/cut4.jpg';
 import cut5 from './images/cuts/cut5.jpg';
 import cut6 from './images/cuts/cut6.jpg';
-import insta from './images/icons/instagram.png';
-import email from './images/icons/email.png';
-import phone from './images/icons/phone.png';
-import location from './images/icons/location.png';
-
-
-// import StandardImageList from './ImageList';
+import Footer from './Footer';
 
 
 function Home() {
@@ -26,10 +20,6 @@ function Home() {
   const move = () => {
     navigate('/bookings');
   }
-
-  const redirect = () => {
-    window.location.href = 'https://www.instagram.com/senordrip/';
-  };
 
   return (  
     <>
@@ -230,61 +220,7 @@ function Home() {
         </Box>
         
 
-        <Box
-          sx={{
-            height:'20vh',
-            width: '100vw',
-            bgcolor: '#F1F0EF',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-evenly'
-          }}
-        >
-          <Box
-            id='footer-icon-box'
-            sx={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-evenly',
-              width: '25%'
-            }}
-          >
-            <img 
-              onClick={redirect}
-              className='footer-icon'
-            
-              src={insta} 
-              alt='instagram'
-              style={{
-                width: '30px'
-              }}
-            ></img>
-            <img 
-              className='footer-icon'
-              src={phone} 
-              alt='phone'
-              style={{
-                width: '30px'
-              }}
-            ></img>
-            <img 
-              className='footer-icon'
-              src={location} 
-              alt='location'
-              style={{
-                width: '30px'
-              }}
-            ></img>
-            <img 
-              className='footer-icon'
-              src={email} 
-              alt='email'
-              style={{
-                width: '30px'
-              }}
-            ></img>
-          </Box>
-        </Box>
+        <Footer></Footer>
       </Container>
     </>
   );

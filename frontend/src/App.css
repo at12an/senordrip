@@ -50,6 +50,10 @@ body {
   #footer-icon-box {
     width: 50% !important;
   }
+
+  #services-box, .services-img {
+    width: 100vw !important;
+  }
 }
 
 
