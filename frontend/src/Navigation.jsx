@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import logo from './images/logos/logo1-bg.jpg';
 import '@fontsource/roboto';
 
-const pages = ['Home', 'Services', 'Bookings', 'Contact'];
+const pages = ['Home', 'Services', 'Bookings', 'Contacts'];
 
 function Navigation() {
 

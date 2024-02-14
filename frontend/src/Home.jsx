@@ -118,7 +118,9 @@ function Home() {
             className='home-about-textbox' 
             sx={{
               p: 1,
-              width: '50%'
+              width: '50%',
+              justifyContent: 'center',
+              alignItems: 'center'
             }}
           >
             <Typography 
@@ -127,7 +129,7 @@ function Home() {
                 color:'black'
               }}
             >
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.           
+                Senor Drip is more than just a barbershop; it's a haven for those seeking a personalized grooming experience. Our mission is to transcend traditional hair care by understanding our clients' unique preferences and delivering exceptional service through transparent communication. At Senor Drip, we don't just provide haircuts; we create styles that reflect your individuality and personal taste.           
             </Typography>
             <Typography 
               sx={{
@@ -135,7 +137,15 @@ function Home() {
                 color:'#192A56'
               }}
             >
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                In addition to our cutting-edge hairstyling services, we also offer meticulous car detailing to ensure that every aspect of your personal style shines. Our commitment to quality extends beyond our services to include a curated selection of products that complement your lifestyle. Whether you're looking for a classic cut or a bold new look, Senor Drip is the destination for those who seek both style and substance. Visit us today and experience the difference firsthand!
+            </Typography>
+            <Typography 
+              sx={{
+                mt:'30px',
+                color:'#192A56'
+              }}
+            >
+              Please note that Senor Drip is a private barbershop with a confidential location in Peakhurst.
             </Typography>
           </Box>
         </Box>

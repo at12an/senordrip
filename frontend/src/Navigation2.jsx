@@ -5,13 +5,17 @@ import { Link, useNavigate } from 'react-router-dom';
 import logo from './images/logos/logo1-bg.jpg';
 
 
-const pages = ['Home', 'Services', 'Bookings', 'Contact'];
+const pages = ['Home', 'Services', 'Bookings', 'Contacts'];
 
 function Navigation() {
     const navigate = useNavigate();
 
-  const move = () => {
-    navigate('/bookings');
+  const moveToBookings = () => {
+    navigate('/Bookings');
+  }
+
+  const moveToHome = () => {
+    navigate('/Home');
   }
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -26,19 +30,36 @@ function Navigation() {
   return (
     <AppBar position="static" sx={{bgcolor:'#F1F0EF', color:'black', width: '100%', p:1}}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar sx={{
+          justifyContent: 'space-between'
+        }} disableGutters>
         <img 
+            onClick={moveToHome}
             id='nav-logo'
             src={logo} 
             alt='logo'
             style={{
               height: '100px',
               marginLeft: '175px',
-              marginRight: '10px  '
+              marginRight: '10px',
+              '&:hover': {
+                cursor: 'pointer'
+              }
+            }}
+        ></img>
+        <img 
+            id='nav-logo2'
+            src={logo} 
+            alt='logo'
+            style={{
+              height: '100px',
+              marginLeft: '175px',
+              marginRight: '10px',
+              display: 'none'
             }}
         ></img>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -89,17 +110,6 @@ function Navigation() {
               ))}
             </Menu>
           </Box>
-          <img 
-            id='nav-logo2'
-            src={logo} 
-            alt='logo'
-            style={{
-              height: '100px',
-              marginLeft: '175px',
-              marginRight: '10px',
-              display: 'none'
-            }}
-        ></img>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -138,8 +148,8 @@ function Navigation() {
           </Box>
 
 
-            <Box 
-            onClick={move}
+          <Box 
+            onClick={moveToBookings}
             id='nav-book-button'
             sx={{ 
               flexGrow: 0,

@@ -2,13 +2,17 @@ import './App.css';
 import {Box} from '@mui/material';
 import insta from './images/icons/instagram.png';
 import email from './images/icons/email.png';
-import phone from './images/icons/phone.png';
-import location from './images/icons/location.png';
+// import phone from './images/icons/phone.png';
+// import location from './images/icons/location.png';
 
 
 function Footer() {
     const redirect = () => {
-        window.location.href = 'https://www.instagram.com/senordrip/';
+      window.location.href = 'https://www.instagram.com/senordrip/';
+    };
+
+    const redirect2 = () => {
+      window.location.href = 'mailto:barbersenordrip@outlook.com';
     };
 
   return (
@@ -44,23 +48,24 @@ function Footer() {
                     width: '30px'
                 }}
             ></img>
-            <img 
+            {/* <img 
               className='footer-icon'
               src={phone} 
               alt='phone'
               style={{
                 width: '30px'
               }}
-            ></img>
-            <img 
+            ></img> */}
+            {/* <img 
               className='footer-icon'
               src={location} 
               alt='location'
               style={{
                 width: '30px'
               }}
-            ></img>
+            ></img> */}
             <img 
+              onClick={redirect2}
               className='footer-icon'
               src={email} 
               alt='email'

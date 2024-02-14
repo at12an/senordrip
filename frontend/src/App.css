@@ -12,6 +12,10 @@ body {
   transform: scale(1.1);
 }
 
+#nav-logo:hover, #nav-book-button:hover, .footer-icon:hover, #contacts-bookings:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 1100px) {
   #home-about-box {
     flex-direction: column;
@@ -23,7 +27,6 @@ body {
   }
 
   #nav-logo {
-    /* margin-left: 0 !important; */
     display: none !important;
   }
 
@@ -63,6 +66,27 @@ body {
 
   .home-picture-img {
     width: 30vw !important;
+  }
+
+  #contacts-section1 {
+    height: 70vh !important;
+  }
+
+  #contacts-h1-box {
+    width: 90vw !important;
+  }
+
+  #contacts-section2 {
+    flex-direction: column !important;
+  }
+
+  #contacts-img {
+    width: 80vw !important;
+    height: auto !important;
+  }
+
+  #contacts-img-box {
+    margin-bottom: 10vh;
   }
 }
 
