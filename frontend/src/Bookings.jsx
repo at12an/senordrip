@@ -2,11 +2,12 @@ import './App.css';
 import { Container, Typography, Box, Button } from '@mui/material';
 import bookings from './images/services/bookings.jpg';
 import Footer from './Footer';
-
+import { useEffect } from 'react';
 
 
 
 function Bookings() {
+
   return (
     <>
       <Container 

@@ -11,7 +11,9 @@ function Navigation() {
     const navigate = useNavigate();
 
   const moveToBookings = () => {
-    navigate('/Bookings');
+    // navigate('/Bookings');
+    window.location.href = 'https://calendar.app.google/bio8GXyockVMtT3F8';
+    // calendar.app.google/bio8GXyockVMtT3F8
   }
 
   const moveToHome = () => {
@@ -127,22 +129,43 @@ function Navigation() {
                 }
               }}
             >
-              <Link 
-                className='nav-link'
-                to={`/${page}`} 
-                style={{
-                  textDecoration: 'none',
-                  color: 'grey',
-                  paddingBottom: '10px',
-                  fontFamily: 'Roboto',
-                  fontWeight: 300,
-                  letterSpacing: '.1rem',
-                  textTransform: 'none',
-                  fontSize: '0.8rem',
-                }}
-              >
-                {page}
-              </Link>
+             { page === 'Bookings' ? (
+            <a 
+              className='nav-link'
+              href="https://calendar.app.google/bio8GXyockVMtT3F8"
+              // target="_blank"
+              // rel="noopener noreferrer"
+              style={{
+                textDecoration: 'none',
+                color: 'grey',
+                paddingBottom: '10px',
+                fontFamily: 'Roboto',
+                fontWeight: 300,
+                letterSpacing: '.1rem',
+                textTransform: 'none',
+                fontSize: '0.8rem',
+              }}
+            >
+              {page}
+            </a>
+          ) : (
+            <Link 
+              className='nav-link'
+              to={`/${page}`} 
+              style={{
+                textDecoration: 'none',
+                color: 'grey',
+                paddingBottom: '10px',
+                fontFamily: 'Roboto',
+                fontWeight: 300,
+                letterSpacing: '.1rem',
+                textTransform: 'none',
+                fontSize: '0.8rem',
+              }}
+            >
+              {page}
+            </Link>
+          )}
             </Button>
             ))}
           </Box>

@@ -10,7 +10,7 @@ function Contacts() {
     const navigate = useNavigate();
 
     const move = () => {
-        navigate('/bookings');
+       window.location.href = 'https://calendar.app.google/bio8GXyockVMtT3F8';
     }
 
     return (
